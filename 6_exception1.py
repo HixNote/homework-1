@@ -11,10 +11,16 @@
 """
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
+    ask_ans = {"Привет": "Привет", "Как дела": "Хорошо!", "Что делаешь?": "Программирую", "Пока": "Досвидания"}
+    ask = input('Задай вопрос \n')
+    while ask in ask_ans:
+        try:
+            print(ask_ans[f'{ask}'])
+            ask = input('Задай вопрос \n')
+        except(KeyboardInterrupt):
+            print('Досвидания')
+            break
+
+
 if __name__ == "__main__":
     ask_user()

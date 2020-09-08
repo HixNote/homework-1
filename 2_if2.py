@@ -15,12 +15,26 @@
 
 """
 
+
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
-    
+    a = 'sdfgg'
+    b = 'фыаф'
+
+    def string(str1, str2):
+
+        if (type(str1) or type(str2)) is not str:
+            print('0')
+        elif str1 == str2:
+            print('1')
+        elif str2 == 'learn':
+            print('3')
+        elif str1 > str2:
+            print('2')
+        else:
+            print('What?!')
+
+    string(a, b)
+
+
 if __name__ == "__main__":
     main()
